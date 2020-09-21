@@ -28,7 +28,7 @@ class DevelopabilityDataset(InMemoryDataset):
   def download(self):
     #pass
     print('reached download')
-    path=-download_url(self.url,self.raw_dir)
+    path=download_url(self.url,self.raw_dir)
     extract_zip(path,self.raw_dir)
     os.unlink(path)
 
